@@ -1,0 +1,513 @@
+2025-08-12 00:28:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 00:28:53 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 21.0.7 with PID 409429 (/home/manikandan.tm@zucisystems.com/workspace/hermes/target/classes started by manikandan.tm@zucisystems.com in /home/manikandan.tm@zucisystems.com/workspace/hermes)
+2025-08-12 00:28:53 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 00:28:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 00:28:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 00:28:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 00:28:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:28:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 00:28:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 00:28:55 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 00:28:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1783 ms
+2025-08-12 00:28:56 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 00:28:56 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 00:28:56 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:28:56 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 00:28:56 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 3.389 seconds (process running for 4.392)
+2025-08-12 00:30:16 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 23 class path changes (0 additions, 21 deletions, 2 modifications)
+2025-08-12 00:30:16 [Thread-5] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 00:30:16 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:16 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 00:30:16 [Thread-5] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:16 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 21.0.7 with PID 409429 (/home/manikandan.tm@zucisystems.com/workspace/hermes/target/classes started by manikandan.tm@zucisystems.com in /home/manikandan.tm@zucisystems.com/workspace/hermes)
+2025-08-12 00:30:16 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 00:30:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 00:30:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 00:30:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 00:30:16 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 00:30:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 548 ms
+2025-08-12 00:30:17 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 00:30:17 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 00:30:17 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 00:30:17 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 0.932 seconds (process running for 84.884)
+2025-08-12 00:30:17 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-08-12 00:30:18 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 21 class path changes (21 additions, 0 deletions, 0 modifications)
+2025-08-12 00:30:18 [Thread-7] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 00:30:18 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:18 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 00:30:18 [Thread-7] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:18 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 21.0.7 with PID 409429 (/home/manikandan.tm@zucisystems.com/workspace/hermes/target/classes started by manikandan.tm@zucisystems.com in /home/manikandan.tm@zucisystems.com/workspace/hermes)
+2025-08-12 00:30:18 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 00:30:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 00:30:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 00:30:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 00:30:19 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 00:30:19 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 404 ms
+2025-08-12 00:30:19 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 00:30:19 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 00:30:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:30:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 00:30:19 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 0.659 seconds (process running for 86.977)
+2025-08-12 00:30:19 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-08-12 00:34:52 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 23 class path changes (0 additions, 21 deletions, 2 modifications)
+2025-08-12 00:34:52 [Thread-11] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 00:34:52 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:52 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 00:34:52 [Thread-11] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:52 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 21.0.7 with PID 409429 (/home/manikandan.tm@zucisystems.com/workspace/hermes/target/classes started by manikandan.tm@zucisystems.com in /home/manikandan.tm@zucisystems.com/workspace/hermes)
+2025-08-12 00:34:52 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 00:34:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 00:34:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 00:34:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 00:34:52 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 00:34:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 456 ms
+2025-08-12 00:34:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 00:34:53 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 00:34:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 00:34:53 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 0.721 seconds (process running for 360.783)
+2025-08-12 00:34:53 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-08-12 00:34:54 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 21 class path changes (21 additions, 0 deletions, 0 modifications)
+2025-08-12 00:34:54 [Thread-15] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 00:34:54 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 00:34:54 [Thread-15] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:54 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 21.0.7 with PID 409429 (/home/manikandan.tm@zucisystems.com/workspace/hermes/target/classes started by manikandan.tm@zucisystems.com in /home/manikandan.tm@zucisystems.com/workspace/hermes)
+2025-08-12 00:34:54 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 00:34:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 00:34:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 00:34:54 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 00:34:54 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 00:34:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 437 ms
+2025-08-12 00:34:55 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 00:34:55 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 00:34:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 00:34:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 00:34:55 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 0.664 seconds (process running for 362.911)
+2025-08-12 00:34:55 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-08-12 20:37:18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 20:37:18 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 24.0.1 with PID 6803 (/home/roobadharani.deva@zucisystems.com/build/hermes/target/classes started by roobadharani.deva@zucisystems.com in /home/roobadharani.deva@zucisystems.com/build/hermes)
+2025-08-12 20:37:18 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 20:37:19 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 20:37:19 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 20:37:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 20:37:20 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:37:20 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 20:37:20 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 20:37:20 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 20:37:20 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1094 ms
+2025-08-12 20:37:20 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 20:37:20 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 20:37:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:37:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 20:37:21 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 2.402 seconds (process running for 3.072)
+2025-08-12 20:41:22 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 20:41:22 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 20:41:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 20:41:24 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 24.0.1 with PID 7614 (/home/roobadharani.deva@zucisystems.com/build/hermes/target/classes started by roobadharani.deva@zucisystems.com in /home/roobadharani.deva@zucisystems.com/build/hermes)
+2025-08-12 20:41:24 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 20:41:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 20:41:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 20:41:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 20:41:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:41:26 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 20:41:26 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 20:41:26 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 20:41:26 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1148 ms
+2025-08-12 20:41:26 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 20:41:26 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 20:41:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:41:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 20:41:26 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 2.187 seconds (process running for 2.745)
+2025-08-12 20:41:32 [http-nio-8191-exec-1] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12 20:41:32 [http-nio-8191-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-12 20:41:32 [http-nio-8191-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-12 20:41:32 [http-nio-8191-exec-1] INFO  o.i.hermes.controller.AuthController - Login response success for username
+2025-08-12 20:41:32 [http-nio-8191-exec-1] INFO  o.intics.hermes.service.AuthService - loginRedirect called with loginSource=PH, username=SmartIntake
+2025-08-12 20:41:32 [http-nio-8191-exec-1] INFO  o.intics.hermes.service.AuthService - Calling PH login URL: https://intics.elevance.ngrok.dev/alchemy-server/alchemy/api/v2/auth/login
+2025-08-12 20:41:33 [http-nio-8191-exec-1] INFO  o.intics.hermes.service.AuthService - Received successful response with status code: 200 OK
+2025-08-12 20:41:42 [http-nio-8191-exec-3] INFO  o.i.hermes.controller.AuthController - Login response success for username
+2025-08-12 20:41:42 [http-nio-8191-exec-3] INFO  o.intics.hermes.service.AuthService - loginRedirect called with loginSource=BH, username=SmartIntake
+2025-08-12 20:41:42 [http-nio-8191-exec-3] INFO  o.intics.hermes.service.AuthService - Calling BH login URL: https://agentic.intics.ai/alchemy-server/alchemy/api/v2/auth/login
+2025-08-12 20:41:42 [http-nio-8191-exec-3] INFO  o.intics.hermes.service.AuthService - Received successful response with status code: 200 OK
+2025-08-12 20:51:24 [http-nio-8191-exec-6] INFO  o.i.h.c.InboundShadowController - Completed processing docTypeBasedRedirect for tenantId=1, documentType=HEALTH_CARE
+2025-08-12 20:51:24 [http-nio-8191-exec-6] INFO  o.i.h.service.InboundShadowService - docTypeRedirect called with tenantId=1, documentType=HEALTH_CARE, healthPlan=PH, channel=test
+2025-08-12 20:51:24 [http-nio-8191-exec-6] INFO  o.i.h.service.InboundShadowService - Forwarding request to URL: https://intics.elevance.ngrok.dev/alchemy-server/alchemy/api/v2/transaction/create/pipeline/shadow/fileUrl/HEALTH_CARE?tenantId=1&channel=test&documentType=HEALTH_CARE
+2025-08-12 20:51:25 [http-nio-8191-exec-6] ERROR o.i.h.service.InboundShadowService - Error from external service: status=401 UNAUTHORIZED, body=
+2025-08-12 20:51:25 [http-nio-8191-exec-6] ERROR o.i.h.e.GlobalExceptionHandler - 
+org.intics.hermes.exception.HermesException: 
+	at org.intics.hermes.service.InboundShadowService.docTypeRedirect(InboundShadowService.java:113)
+	at org.intics.hermes.controller.InboundShadowController.docTypeBasedRedirect(InboundShadowController.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-12 20:51:25 [http-nio-8191-exec-6] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.intics.hermes.exception.HermesException: ]
+2025-08-12 20:58:46 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 20:58:46 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 20:58:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 20:58:49 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 24.0.1 with PID 8810 (/home/roobadharani.deva@zucisystems.com/build/hermes/target/classes started by roobadharani.deva@zucisystems.com in /home/roobadharani.deva@zucisystems.com/build/hermes)
+2025-08-12 20:58:49 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 20:58:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 20:58:50 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 20:58:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 20:58:51 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:58:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 20:58:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 20:58:51 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 20:58:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1228 ms
+2025-08-12 20:58:51 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 20:58:52 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 20:58:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:58:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 20:58:52 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 2.456 seconds (process running for 3.087)
+2025-08-12 20:59:23 [http-nio-8191-exec-2] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12 20:59:23 [http-nio-8191-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-12 20:59:23 [http-nio-8191-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-12 20:59:49 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 20:59:49 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 20:59:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 20:59:52 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 24.0.1 with PID 8962 (/home/roobadharani.deva@zucisystems.com/build/hermes/target/classes started by roobadharani.deva@zucisystems.com in /home/roobadharani.deva@zucisystems.com/build/hermes)
+2025-08-12 20:59:52 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 20:59:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 20:59:52 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 20:59:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 20:59:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:59:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 20:59:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 20:59:53 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 20:59:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1301 ms
+2025-08-12 20:59:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 20:59:54 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 20:59:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 20:59:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 20:59:54 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 2.454 seconds (process running for 3.093)
+2025-08-12 21:00:51 [http-nio-8191-exec-2] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12 21:00:51 [http-nio-8191-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-12 21:00:51 [http-nio-8191-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-08-12 21:00:51 [http-nio-8191-exec-2] INFO  o.i.hermes.controller.AuthController - Login response success for username
+2025-08-12 21:00:51 [http-nio-8191-exec-2] INFO  o.intics.hermes.service.AuthService - loginRedirect called with loginSource=PH, username=SmartIntake
+2025-08-12 21:00:51 [http-nio-8191-exec-2] INFO  o.intics.hermes.service.AuthService - Calling PH login URL: https://intics.elevance.ngrok.dev/alchemy-server/alchemy/api/v2/auth/login
+2025-08-12 21:00:52 [http-nio-8191-exec-2] INFO  o.intics.hermes.service.AuthService - Received successful response with status code: 200 OK
+2025-08-12 21:02:15 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-12 21:02:15 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-08-12 21:02:18 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 21:02:18 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 24.0.1 with PID 9254 (/home/roobadharani.deva@zucisystems.com/build/hermes/target/classes started by roobadharani.deva@zucisystems.com in /home/roobadharani.deva@zucisystems.com/build/hermes)
+2025-08-12 21:02:18 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 21:02:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 21:02:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 21:02:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 21:02:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 21:02:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 21:02:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 21:02:19 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 21:02:19 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1186 ms
+2025-08-12 21:02:20 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-12 21:02:20 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 21:02:20 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 21:02:20 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8191 (http) with context path '/hermes'
+2025-08-12 21:02:20 [restartedMain] INFO  org.intics.hermes.HermesApplication - Started HermesApplication in 2.454 seconds (process running for 3.092)
+2025-08-12 21:02:35 [http-nio-8191-exec-2] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-12 21:02:35 [http-nio-8191-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-12 21:02:35 [http-nio-8191-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-08-12 21:02:35 [http-nio-8191-exec-2] INFO  o.i.hermes.controller.AuthController - Login response success for username
+2025-08-12 21:02:35 [http-nio-8191-exec-2] INFO  o.intics.hermes.service.AuthService - loginRedirect called with loginSource=PH, username=SmartIntake
+2025-08-12 21:02:35 [http-nio-8191-exec-2] INFO  o.intics.hermes.service.AuthService - Calling PH login URL: https://intics.elevance.ngrok.dev/alchemy-server/alchemy/api/v2/auth/login
+2025-08-12 21:02:36 [http-nio-8191-exec-2] INFO  o.intics.hermes.service.AuthService - Received successful response with status code: 200 OK
+2025-08-12 21:03:10 [http-nio-8191-exec-3] INFO  o.i.h.c.InboundShadowController - Completed processing docTypeBasedRedirect for tenantId=1, documentType=HEALTH_CARE
+2025-08-12 21:03:10 [http-nio-8191-exec-3] INFO  o.i.h.service.InboundShadowService - docTypeRedirect called with tenantId=1, documentType=HEALTH_CARE, healthPlan=PH, channel=test
+2025-08-12 21:03:10 [http-nio-8191-exec-3] INFO  o.i.h.service.InboundShadowService - Forwarding request to URL: https://intics.elevance.ngrok.dev/alchemy-server/alchemy/api/v2/transaction/create/pipeline/shadow/fileUrl/HEALTH_CARE?tenantId=1&channel=test&documentType=HEALTH_CARE
+2025-08-12 21:03:10 [http-nio-8191-exec-3] ERROR o.i.h.service.InboundShadowService - Error from external service: status=401 UNAUTHORIZED, body=
+2025-08-12 21:03:10 [http-nio-8191-exec-3] ERROR o.i.h.e.GlobalExceptionHandler - 
+org.intics.hermes.exception.HermesException: 
+	at org.intics.hermes.service.InboundShadowService.docTypeRedirect(InboundShadowService.java:113)
+	at org.intics.hermes.controller.InboundShadowController.docTypeBasedRedirect(InboundShadowController.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-12 21:03:10 [http-nio-8191-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.intics.hermes.exception.HermesException: ]
+2025-08-12 21:05:39 [http-nio-8191-exec-5] INFO  o.i.hermes.controller.AuthController - Login response success for username
+2025-08-12 21:05:39 [http-nio-8191-exec-5] INFO  o.intics.hermes.service.AuthService - loginRedirect called with loginSource=P, username=SmartIntake
+2025-08-12 21:05:39 [http-nio-8191-exec-5] WARN  o.intics.hermes.service.AuthService - No valid login source found for loginSource=P
+2025-08-12 21:05:39 [http-nio-8191-exec-5] ERROR o.intics.hermes.service.AuthService - Error calling external API: Invalid login source: P
+org.intics.hermes.exception.HermesException: Invalid login source: P
+	at org.intics.hermes.service.AuthService.loginRedirect(AuthService.java:54)
+	at org.intics.hermes.controller.AuthController.loginRedirect(AuthController.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+2025-08-12 21:05:39 [http-nio-8191-exec-5] ERROR o.i.h.e.GlobalExceptionHandler - Invalid login source: P
+org.intics.hermes.exception.HermesException: Invalid login source: P
+	at org.intics.hermes.service.AuthService.loginRedirect(AuthService.java:79)
+	at org.intics.hermes.controller.AuthController.loginRedirect(AuthController.java:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1447)
+Caused by: org.intics.hermes.exception.HermesException: Invalid login source: P
+	at org.intics.hermes.service.AuthService.loginRedirect(AuthService.java:54)
+	... 53 common frames omitted
+2025-08-12 21:05:39 [http-nio-8191-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.intics.hermes.exception.HermesException: Invalid login source: P]
+2025-08-12 21:06:11 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 21:06:11 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 24.0.1 with PID 9551 (/home/roobadharani.deva@zucisystems.com/build/hermes/target/classes started by roobadharani.deva@zucisystems.com in /home/roobadharani.deva@zucisystems.com/build/hermes)
+2025-08-12 21:06:11 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 21:06:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 21:06:11 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 21:06:13 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 21:06:13 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 21:06:13 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 21:06:13 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 21:06:13 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 21:06:13 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1425 ms
+2025-08-12 21:06:14 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-08-12 21:06:14 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 21:06:14 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 21:06:14 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-12 21:06:14 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12 21:06:14 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8191 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8191 or configure this application to listen on another port.
+
+2025-08-12 21:06:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-12 21:06:34 [restartedMain] INFO  org.intics.hermes.HermesApplication - Starting HermesApplication using Java 24.0.1 with PID 9655 (/home/roobadharani.deva@zucisystems.com/build/hermes/target/classes started by roobadharani.deva@zucisystems.com in /home/roobadharani.deva@zucisystems.com/build/hermes)
+2025-08-12 21:06:34 [restartedMain] INFO  org.intics.hermes.HermesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-12 21:06:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-12 21:06:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-12 21:06:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8191 (http)
+2025-08-12 21:06:35 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8191"]
+2025-08-12 21:06:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-12 21:06:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-12 21:06:35 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/hermes] - Initializing Spring embedded WebApplicationContext
+2025-08-12 21:06:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1281 ms
+2025-08-12 21:06:36 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-08-12 21:06:36 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-08-12 21:06:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8191"]
+2025-08-12 21:06:36 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-12 21:06:36 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-12 21:06:36 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8191 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8191 or configure this application to listen on another port.
+
