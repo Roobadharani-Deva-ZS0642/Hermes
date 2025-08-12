@@ -3,6 +3,7 @@ package org.intics.hermes.dto;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,7 @@ import java.time.format.DateTimeFormatter;
 @Data
 @NoArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@AllArgsConstructor
 public class ResponseStatusPayload<T> {
 
     private Object payload;
@@ -36,6 +38,7 @@ public class ResponseStatusPayload<T> {
         this.responseTimeStamp = LocalDateTime.now(Clock.systemDefaultZone());
 
     }
+
     public String getResponseTimeStamp() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
         return responseTimeStamp.format(formatter);

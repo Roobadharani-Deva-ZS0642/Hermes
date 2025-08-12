@@ -28,5 +28,8 @@ public class HermesException extends RuntimeException {
         this.errorCode = errorCode;
         this.errorMsg = msg;
     }
-}
 
+    public static HermesException redirectIssue(String msg) {
+        return new HermesException(msg, HttpStatus.BAD_REQUEST.value());
+    }
+}

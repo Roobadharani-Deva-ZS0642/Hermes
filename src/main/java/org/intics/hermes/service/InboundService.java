@@ -1,5 +1,6 @@
 package org.intics.hermes.service;
 
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.intics.hermes.dto.InboundRequest;
@@ -30,7 +31,8 @@ public class InboundService {
     @Value("${bh.inbound.url}")
     private String bhInboundUrl;
 
-    private final ObjectMapper objectMapper = new ObjectMapper();
+    private final ObjectMapper objectMapper = new ObjectMapper()
+            .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
     private static final Set<String> HOP_BY_HOP_HEADERS = Set.of(
             HttpHeaders.CONNECTION,
@@ -48,7 +50,8 @@ public class InboundService {
                                                            String channel,
                                                            String documentType,
                                                            Principal principal,
-                                                           String authHeader) {
+                                                           String authHeader,
+                                                           String source) {
 
         String healthPlan = inboundRequest.getHealthPlan();
         logger.info("docTypeRedirect called with tenantId={}, documentType={}, healthPlan={}, channel={}",
@@ -68,6 +71,7 @@ public class InboundService {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.set(HttpHeaders.AUTHORIZATION, authHeader);
+        headers.set("instanceType", source != null ? source : "");
 
         if (principal != null) {
             headers.add("X-User", principal.getName());
@@ -85,18 +89,12 @@ public class InboundService {
         try {
             ResponseEntity<InboundResponse> response = restTemplate.exchange(finalUrl, HttpMethod.POST, requestEntity, InboundResponse.class);
 
-            if (response.getBody() == null) {
-                throw new HermesException("Empty response body from external service", HttpStatus.INTERNAL_SERVER_ERROR.value());
-            }
-
             if (logger.isInfoEnabled()) {
                 logger.info("Response body received {}", objectMapper.writeValueAsString(response.getBody()));
             }
-
             logger.info("Response received with status code: {}", response.getStatusCode());
-            HttpHeaders incomingHeaders = response.getHeaders();
             HttpHeaders outgoingHeaders = new HttpHeaders();
-            incomingHeaders.forEach((key, values) -> {
+            response.getHeaders().forEach((key, values) -> {
                 if (!HOP_BY_HOP_HEADERS.contains(key)) {
                     outgoingHeaders.put(key, values);
                 }
@@ -109,12 +107,10 @@ public class InboundService {
             );
 
         } catch (HttpStatusCodeException ex) {
-            logger.error("Error from external service: status={}, body={}", ex.getStatusCode(), ex.getResponseBodyAsString());
-            throw new HermesException( ex.getResponseBodyAsString(), ex.getStatusCode().value());
+            throw new HermesException(ex.getMessage(), ex.getStatusCode().value());
         } catch (Exception ex) {
             logger.error("Unexpected error forwarding request", ex);
             throw new HermesException(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR.value());
         }
     }
 }
-

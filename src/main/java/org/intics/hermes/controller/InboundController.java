@@ -25,9 +25,10 @@ public class InboundController {
                                                                 @RequestParam(required = false) String channel,
                                                                 @PathVariable String documentType,
                                                                 final Principal principal,
-                                                                @RequestHeader(value = "Authorization") String authHeader) {
+                                                                @RequestHeader(value = "Authorization") String authHeader,
+                                                                @RequestHeader(value = "instanceType", required = false) String source) {
 
         logger.info("Completed processing docTypeBasedRedirect for tenantId={}, documentType={}", tenantId, documentType);
-        return inboundService.docTypeRedirect(tenantId, inboundRequest, channel, documentType, principal, authHeader);
+        return inboundService.docTypeRedirect(tenantId, inboundRequest, channel, documentType, principal, authHeader, source);
     }
 }

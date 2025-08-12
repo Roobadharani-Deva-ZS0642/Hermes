@@ -12,8 +12,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -21,6 +23,7 @@ public class AuthService {
 
     private static final Logger logger = LoggerFactory.getLogger(AuthService.class);
     private final RestTemplate restTemplate = new RestTemplate();
+
     private final ObjectMapper objectMapper = new ObjectMapper()
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
@@ -30,53 +33,58 @@ public class AuthService {
     @Value("${ph.login.url}")
     private String phLoginUrl;
 
-    public ResponseStatusPayload<CurrentUser> loginRedirect(LoginRequest loginRequest, String loginSource) {
+    private static final Set<String> HOP_BY_HOP_HEADERS = Set.of(
+            HttpHeaders.CONNECTION,
+            HttpHeaders.PROXY_AUTHENTICATE,
+            HttpHeaders.PROXY_AUTHORIZATION,
+            HttpHeaders.TE,
+            HttpHeaders.TRAILER,
+            HttpHeaders.TRANSFER_ENCODING,
+            HttpHeaders.UPGRADE,
+            HttpHeaders.CONTENT_LENGTH
+    );
+
+    public ResponseEntity<ResponseStatusPayload<CurrentUser>> loginRedirect(LoginRequest loginRequest, String loginSource) {
         logger.info("loginRedirect called with loginSource={}, username={}", loginSource, loginRequest.getUsername());
+
+        String targetUrl = switch (loginSource) {
+            case "BH" -> bhLoginUrl;
+            case "PH" -> phLoginUrl;
+            default -> throw new HermesException("Invalid login source: " + loginSource, HttpStatus.BAD_REQUEST.value());
+        };
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+        HttpEntity<LoginRequest> requestEntity = new HttpEntity<>(loginRequest, headers);
 
-        HttpEntity<LoginRequest> entity = new HttpEntity<>(loginRequest, headers);
-        ResponseEntity<ResponseStatusPayload> response;
+        logger.info("Forwarding login request to: {}", targetUrl);
 
         try {
-            response = switch (loginSource) {
-                case "BH" -> {
-                    logger.info("Calling BH login URL: {}", bhLoginUrl);
-                    yield restTemplate.postForEntity(bhLoginUrl, entity, ResponseStatusPayload.class);
-                }
-                case "PH" -> {
-                    logger.info("Calling PH login URL: {}", phLoginUrl);
-                    yield restTemplate.postForEntity(phLoginUrl, entity, ResponseStatusPayload.class);
-                }
-                default -> {
-                    logger.warn("No valid login source found for loginSource={}", loginSource);
-                    throw new HermesException("Invalid login source: " + loginSource);
-                }
-            };
+            ResponseEntity<ResponseStatusPayload> response =
+                    restTemplate.exchange(targetUrl, HttpMethod.POST, requestEntity, ResponseStatusPayload.class);
 
-            ResponseStatusPayload responseBody = response.getBody();
-            if (responseBody == null) {
-                logger.error("Response body is empty for loginSource={}", loginSource);
-                throw new HermesException("Response body is empty");
-            }
-            if (response.getStatusCode().is2xxSuccessful()) {
-                logger.info("Received successful response with status code: {}", response.getStatusCode());
+            CurrentUser currentUser = objectMapper.convertValue(response.getBody().getPayload(), CurrentUser.class);
 
-                CurrentUser currentUser = objectMapper.convertValue(
-                        responseBody.getPayload(),
-                        CurrentUser.class
-                );
+            HttpHeaders outgoingHeaders = new HttpHeaders();
+            response.getHeaders().forEach((key, values) -> {
+                if (!HOP_BY_HOP_HEADERS.contains(key)) {
+                    outgoingHeaders.put(key, values);
+                }
+            });
 
-                return new ResponseStatusPayload<>(currentUser);
-            } else {
-                HttpStatusCode statusCode = response.getStatusCode();
-                logger.error("Unexpected response status: {}", statusCode);
-                throw new HermesException("Unexpected response status");
-            }
-        } catch (Exception e) {
-            logger.error("Error calling external API: {}", e.getMessage(), e);
-            throw new HermesException(e.getMessage(), e);
+            return new ResponseEntity<>(
+                    new ResponseStatusPayload<>(currentUser),
+                    outgoingHeaders,
+                    response.getStatusCode()
+            );
+
+        }  catch (HttpStatusCodeException ex) {
+            logger.error("error from alchemy "+ex.getMessage(), ex.getStatusCode().value());
+            throw new HermesException(ex.getMessage(), HttpStatus.UNAUTHORIZED.value());
+        } catch (Exception ex) {
+            logger.error("Unexpected error forwarding request", ex);
+            throw new HermesException(ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR.value());
         }
     }
+
 }

@@ -3,7 +3,6 @@ package org.intics.hermes.controller;
 import lombok.RequiredArgsConstructor;
 import org.intics.hermes.HermesApplication;
 import org.intics.hermes.dto.InboundRequest;
-import org.intics.hermes.service.InboundService;
 import org.intics.hermes.service.InboundShadowService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,9 +25,10 @@ public class InboundShadowController {
                                                                 @RequestParam(required = false) String channel,
                                                                 @PathVariable String documentType,
                                                                 final Principal principal,
-                                                                @RequestHeader(value = "Authorization") String authHeader) {
+                                                                @RequestHeader(value = "Authorization") String authHeader,
+                                                                @RequestHeader(value = "instanceType", required = false) String source) {
 
         logger.info("Completed processing docTypeBasedRedirect for tenantId={}, documentType={}", tenantId, documentType);
-        return inboundShadowService.docTypeRedirect(tenantId, inboundRequest, channel, documentType, principal, authHeader);
+        return inboundShadowService.docTypeRedirect(tenantId, inboundRequest, channel, documentType, principal, authHeader, source);
     }
 }
